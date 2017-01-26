@@ -18,6 +18,7 @@ class CreatetodosTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->datetime('alert');
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
         });
